@@ -19,13 +19,14 @@
   border-radius: none;
 }
 
+/*
 section{
   margin:25px;
   padding:20px;
   background-color: white;
   display:grid;
   grid-template-columns: 1fr;
-}
+}*/
 
 section,iframe{
   border-radius: 5px;

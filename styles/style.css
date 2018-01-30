@@ -45,7 +45,7 @@ h1,h2,h3{
 
 }
 
-.join, .calender{
+.join, .calendar{
   grid-column: 1;
   text-align: center;
   margin:auto;
@@ -55,7 +55,7 @@ h1,h2,h3{
 .g-recaptcha{
   width:70px;
 }
-.calender{
+.calendar{
 
   font-weight: bold;
 

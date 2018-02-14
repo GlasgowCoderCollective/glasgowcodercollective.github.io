@@ -31,7 +31,7 @@ section{
   grid-template-columns: 1fr;
 }*/
 
-section,iframe{
+section{
   border-radius: 5px;
   text-align: center;
 }
@@ -58,12 +58,6 @@ h1,h2,h3{
 
 .g-recaptcha{
   width:70px;
-}
-
-iframe{
-  display:block;
-  margin:auto;
-  width:100%;
 }
 
 footer{

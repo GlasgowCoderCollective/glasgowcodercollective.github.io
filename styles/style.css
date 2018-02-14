@@ -1,18 +1,21 @@
 .navbar{
-  padding:2em;
+  padding:1em;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0 !important;
+}
+
+.navbar-header>h4{
+  color: #b2d8d8;
 }
 
 .main_container{
  /* background-image:url("group2.jpg"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 35px;
-  margin-top: -20px;
+  padding: 25px;
+  margin-top: -30px;
 }
-
 .container{
   padding:0 10px 0 10px;
   background-color: #004c4c;
@@ -71,7 +74,12 @@ iframe{
 
 footer{
   background-color: black;
+  color:#b2d8d8;
   text-align: center;
   margin-bottom: 20px 0 -10px 0;
   padding:10px;
+}
+
+footer>p{
+  padding:5px;
 }

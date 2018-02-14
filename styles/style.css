@@ -49,7 +49,7 @@ h1,h2,h3{
 
 }
 
-.join, .calendar{
+.join{
   grid-column: 1;
   text-align: center;
   margin:auto;
@@ -59,13 +59,7 @@ h1,h2,h3{
 .g-recaptcha{
   width:70px;
 }
-.calendar{
 
-  font-weight: bold;
-
-  height:200px;
-  border-radius: 5px;
-}
 iframe{
   display:block;
   margin:auto;

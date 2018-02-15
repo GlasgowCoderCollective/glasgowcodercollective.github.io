@@ -7,6 +7,7 @@
 
 .navbar-header>h4{
   color: #b2d8d8;
+  padding: 0px !important;
 }
 
 .main_container{
@@ -36,9 +37,13 @@ section{
   text-align: center;
 }
 
-h1,h2,h3{
+h1,h2,h3,h4{
   text-align: center;
-  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+h4{
+  padding: 30px 0 5px 0;
 }
 
 .about{

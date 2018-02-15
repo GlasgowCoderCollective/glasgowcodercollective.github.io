@@ -1,18 +1,22 @@
 .navbar{
-  padding:2em;
+  padding:1em;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0 !important;
+}
+
+.navbar-header>h4{
+  color: #b2d8d8;
+  padding: 0px !important;
 }
 
 .main_container{
  /* background-image:url("group2.jpg"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 35px;
-  margin-top: -20px;
+  padding: 25px;
+  margin-top: -30px;
 }
-
 .container{
   padding:0 10px 0 10px;
   background-color: #004c4c;
@@ -28,14 +32,18 @@ section{
   grid-template-columns: 1fr;
 }*/
 
-section,iframe{
+section{
   border-radius: 5px;
   text-align: center;
 }
 
-h1,h2,h3{
+h1,h2,h3,h4{
   text-align: center;
-  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+h4{
+  padding: 30px 0 5px 0;
 }
 
 .about{
@@ -46,49 +54,48 @@ h1,h2,h3{
 
 }
 
-.join, .calendar{
+.join{
   grid-column: 1;
   text-align: center;
   margin:auto;
   width:400px;
 }
 
-.slack-button {
-  border: 2px solid black;
+.slack-btn {
+  text-decoration: none;
+  padding: 1em;
+  display: block;
+  margin: 1em auto;
+  color: rgb(51, 51, 51);
+}
+
+.slack-btn-outline {
+  border: 2px solid rgb(51, 51, 51);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 10px;
-  padding: 1em;
-  color: black;
+}
+
+.slack-btn-transition {
   -webkit-transition: all ease-in-out 250ms;
   -moz-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms;
 }
 
-.slack-button:hover {
-  background: black;
+.slack-btn:hover {
+  background: rgb(51, 51, 51);
   color: white;
   text-decoration: none;
-}
-/* .g-recaptcha{
-  width:70px;
-} */
-.calendar{
-
-  font-weight: bold;
-
-  height:200px;
-  border-radius: 5px;
-}
-iframe{
-  display:block;
-  margin:auto;
-  width:100%;
 }
 
 footer{
   background-color: black;
+  color:#b2d8d8;
   text-align: center;
   margin-bottom: 20px 0 -10px 0;
   padding:10px;
+}
+
+footer>p{
+  padding:5px;
 }

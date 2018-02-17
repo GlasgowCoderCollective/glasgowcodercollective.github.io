@@ -1,0 +1,10 @@
+# this serves as a template to copy into repos 
+
+*.DS_Store
+
+*.sublime-project
+*.sublime-workspace
+
+node_modules/
+
+.vscode/

@@ -21,17 +21,14 @@ We have big plans for the site
 
 [Ed](https://github.com/L3gomancer) is handling the profile pages section
 
+
+---
 Stretch Goals include:
-
-A forum
-
-User accounts with logins
-
-Polls
-
-Integration with Slack
-
-Some experiments with interactivity and animations
+- A forum
+- User accounts with logins
+- Polls
+- Integration with Slack
+- Some experiments with interactivity and animations
 
 
 

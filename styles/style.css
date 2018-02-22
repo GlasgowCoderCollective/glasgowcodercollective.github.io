@@ -65,6 +65,7 @@ h4{
   padding:20px;
 }
 
+<<<<<<< HEAD
 #main_box{
   grid-column: 2fr;
 }
@@ -75,6 +76,11 @@ h4{
 
 #todo_box{
   grid-column: 1fr;
+=======
+.googlemap {
+  display: flex;
+  justify-content: center;
+>>>>>>> 93cb0abdb0b4032499fa925339b2a061f76c9384
 }
 
 .join{

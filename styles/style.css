@@ -54,9 +54,6 @@ h4{
   opacity:0.7;
   padding: 30px !important;
   border-radius: 5px;
-  display:grid;
-  grid-template-columns: 2fr;
-  grid-gap: 1em;
 }
 
 .box{
@@ -65,22 +62,9 @@ h4{
   padding:20px;
 }
 
-<<<<<<< HEAD
-#main_box{
-  grid-column: 2fr;
-}
-
-#when_box{
-  grid-column: 1fr;
-}
-
-#todo_box{
-  grid-column: 1fr;
-=======
 .googlemap {
   display: flex;
   justify-content: center;
->>>>>>> 93cb0abdb0b4032499fa925339b2a061f76c9384
 }
 
 .join{

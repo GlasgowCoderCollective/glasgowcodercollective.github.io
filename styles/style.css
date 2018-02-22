@@ -54,12 +54,27 @@ h4{
   opacity:0.7;
   padding: 30px !important;
   border-radius: 5px;
+  display:grid;
+  grid-template-columns: 2fr;
+  grid-gap: 1em;
 }
 
 .box{
   background-color:#b2d8d8;
   border-radius: 5px;
   padding:20px;
+}
+
+#main_box{
+  grid-column: 2fr;
+}
+
+#when_box{
+  grid-column: 1fr;
+}
+
+#todo_box{
+  grid-column: 1fr;
 }
 
 .join{

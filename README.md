@@ -17,9 +17,12 @@ In the future we eventually plan on pooling the group’s expertise and offering
 
 We have big plans for the site
 
-[Tracy](https://github.com/verde79) is helming the main page
-
-[Ed](https://github.com/L3gomancer) is handling the profile pages section
+Contributor | Contribution
+- | -
+[Tracy](https://github.com/verde79) | the main page
+[Ed](https://github.com/L3gomancer) | the profile pages section
+Craig | the slack invite
+Alastair | keeping us doing things correctly/tidying up the old repo 
 
 
 ---

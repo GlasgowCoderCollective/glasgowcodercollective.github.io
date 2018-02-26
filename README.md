@@ -18,7 +18,7 @@ In the future we eventually plan on pooling the group’s expertise and offering
 We have big plans for the site
 
 Contributor | Contribution
-- | -
+--- | ---
 [Tracy](https://github.com/verde79) | the main page
 [Ed](https://github.com/L3gomancer) | the profile pages section
 Craig | the slack invite

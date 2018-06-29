@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="styles/styles-candidate.css">
     <title>Index Candidate</title>
 </head>
+
 <body>
     <header>
         <div class="title">
@@ -15,10 +17,35 @@
         </div>
         <nav>
             <ul class="navbar">
-                    <a href="#videos"><li class="navitem">Videos</li></a>
-                    <a href="#about"><li class="navitem">About</li></a>
+                <a href="#videos">
+                    <li class="navitem">Videos</li>
+                </a>
+                <a href="#about">
+                    <li class="navitem">About</li>
+                </a>
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="features">
+            <div class="feature">
+                <h1>Cake</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum error nemo magnam quasi vitae doloribus?</p>
+            </div>
+            <div class="feature">
+                <h1>Coffee</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum error nemo magnam quasi vitae doloribus?</p>
+            </div>
+            <div class="feature">
+                <h1>Code</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum error nemo magnam quasi vitae doloribus?</p>
+            </div>
+        </div>
+        <script>
+            var bodyPaddingTop = document.querySelector('header').clientHeight;
+            document.querySelector('main').style.paddingTop = bodyPaddingTop + 'px';
+        </script>
+    </main>
 </body>
+
 </html>

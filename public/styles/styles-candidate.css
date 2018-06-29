@@ -8,6 +8,10 @@
 
 header {
     display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
     justify-content: space-between;
     padding: 0 1em;
     background: #328AAB;
@@ -45,4 +49,23 @@ header {
 
 .navitem:hover {
     border-color: #723389;
+}
+
+.features {
+    display: flex;
+    background: url('/img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.feature {
+    margin: 1.3em;
+    padding: 1em;
+    text-align: center;
+    background: rgba(114, 51, 137, .7);
+    color: #FFFFFF;
+}
+
+.feature>h1 {
+    padding-bottom: 1em;
 }

@@ -2,14 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    width: 100vw;
-    height: 100vh;
+header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: chocolate;
-    color: cadetblue;
+    justify-content: space-between;
+    padding: 0 1em;
+    background: #328AAB;
+    color: #FFFFFF;
+}
+
+.title {
+    margin: auto 0;
+    font-size: 1rem;
+}
+
+.title>h1::after {
+    content: 'Connecting coders since \'07';
+    display: block;
+    margin-top: .2em;
+    font-size: .6rem;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar>a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navitem {
+    display: inline-block;
+    padding: 1em;
+    font-size: .9rem;
+    border-bottom: 5px solid transparent;
+    transition: border-color linear .2s;
+}
+
+.navitem:hover {
+    border-color: #723389;
 }

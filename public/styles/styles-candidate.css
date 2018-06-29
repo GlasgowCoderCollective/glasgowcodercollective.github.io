@@ -20,7 +20,7 @@ header {
 }
 
 .title>h1::after {
-    content: 'Connecting coders since \'07';
+    content: 'Connecting coders since \'17';
     display: block;
     margin-top: .2em;
     font-size: .6rem;

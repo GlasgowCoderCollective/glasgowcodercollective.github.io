@@ -64,6 +64,8 @@ header {
     text-align: center;
     background: rgba(114, 51, 137, .7);
     color: #FFFFFF;
+    opacity: 0;
+    transition: opacity linear .5s;
 }
 
 .feature>h1 {

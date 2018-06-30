@@ -132,3 +132,36 @@ header {
   background: hsl(196, 55%, 40%);
   transition: background-color linear 0.2s;
 }
+
+footer {
+  padding: 1em;
+  /* background: black; */
+  background: #328aab;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+}
+
+.links>a {
+  color: #ffffff;
+  margin: 1em .5em;
+  text-decoration: none;
+}
+
+.tribute {
+  text-align: center;
+  font-size: .8rem;
+  font-style: italic;
+}
+
+.fab {
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.social {
+  font-size: 2rem;
+}

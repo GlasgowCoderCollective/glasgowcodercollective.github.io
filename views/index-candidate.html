@@ -11,42 +11,60 @@
 </head>
 
 <body>
-    <header>
-        <div class="title">
-            <h1>Glasgow Coder Collective</h1>
-        </div>
-        <nav>
-            <ul class="navbar">
-                <a href="#videos">
-                    <li class="navitem">Videos</li>
-                </a>
-                <a href="#about">
-                    <li class="navitem">About</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="features">
-            <div class="feature">
-                <h1>Cake</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum error nemo magnam quasi vitae doloribus?</p>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Glasgow Coder Collective</h1>
             </div>
-            <div class="feature">
-                <h1>Coffee</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum error nemo magnam quasi vitae doloribus?</p>
+            <nav>
+                <ul class="navbar">
+                    <a href="#videos">
+                        <li class="navitem">Videos</li>
+                    </a>
+                    <a href="#about">
+                        <li class="navitem">About</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="features">
+                <div class="feature">
+                    <h1>Cake</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat
+                        pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum
+                        id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum
+                        error nemo magnam quasi vitae doloribus?</p>
+                </div>
+                <div class="feature">
+                    <h1>Coffee</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat
+                        pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum
+                        id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum
+                        error nemo magnam quasi vitae doloribus?</p>
+                </div>
+                <div class="feature">
+                    <h1>Code</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat
+                        pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum
+                        id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum
+                        error nemo magnam quasi vitae doloribus?</p>
+                </div>
             </div>
-            <div class="feature">
-                <h1>Code</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum error nemo magnam quasi vitae doloribus?</p>
+            <script>
+                var bodyPaddingTop = document.querySelector('header').clientHeight;
+                document.querySelector('main').style.paddingTop = bodyPaddingTop + 'px';
+            </script>
+            <div class="workshops">
+                <h1>Workshops coming up</h1>
+                <!-- Start dynamic content -->
+                <div class="grid"></div>
+                <!-- End dynamic content -->
             </div>
-        </div>
-        <script>
-            var bodyPaddingTop = document.querySelector('header').clientHeight;
-            document.querySelector('main').style.paddingTop = bodyPaddingTop + 'px';
-        </script>
-    </main>
+        </main>
+    </div>
     <script src="js/featuresloader.js"></script>
+    <script src="js/workshopsloader.js"></script>
 </body>
 
 </html>

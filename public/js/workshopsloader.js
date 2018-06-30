@@ -7,6 +7,9 @@ function GetWorkshops() {
     })
     .then(function(workshops) {
         workshops.map(function(workshop) {
+            if(workshop.description.length >= 80) {
+                workshop.description = workshop.description.substring(0, 77) + '...';
+            }
             workshopsContainer.innerHTML += displayWorkshop(workshop);
         });
     })

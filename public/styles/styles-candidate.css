@@ -107,3 +107,28 @@ header {
 .workshop > a:hover {
   color: #328aab;
 }
+
+.slack {
+  display: flex;
+  padding: 1em;
+  justify-content: space-evenly;
+  background: #723389;
+  color: #ffffff;
+}
+
+.slack > p {
+  max-width: 60%;
+}
+
+.slack > a {
+  text-decoration: none;
+  align-self: center;
+  padding: 1.5em;
+  background: #328aab;
+  color: #ffffff;
+}
+
+.slack > a:hover {
+  background: hsl(196, 55%, 40%);
+  transition: background-color linear 0.2s;
+}

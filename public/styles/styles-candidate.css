@@ -107,21 +107,21 @@ header {
   color: #328aab;
 }
 
-.slack {
+.featured-section {
   display: flex;
   padding: 1em;
   justify-content: space-evenly;
-  /* background: #723389;
-  color: #ffffff; */
-  background: white;
-  color: #723389;
+  background: #723389;
+  color: #ffffff;
+  /* background: white;
+  color: #723389; */
 }
 
-.slack > p {
+.featured-section-text {
   max-width: 60%;
 }
 
-.slack > a {
+.featured-section-button {
   text-decoration: none;
   align-self: center;
   padding: 1.5em;
@@ -129,7 +129,7 @@ header {
   color: #ffffff;
 }
 
-.slack > a:hover {
+.featured-section-button:hover {
   background: hsl(196, 55%, 40%);
   color: #723389;
   transition: background-color linear 0.2s;

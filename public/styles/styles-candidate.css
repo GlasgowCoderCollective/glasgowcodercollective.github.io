@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: "Questrial", sans-serif;
+}
+
+.container {
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 0 1em;
+  background: #328aab;
+  color: #ffffff;
+}
+
+.title {
+  margin: auto 0;
+  font-size: 1rem;
+}
+
+.title > h1::after {
+  content: "Connecting coders since '17";
+  display: block;
+  margin-top: 0.2em;
+  font-size: 0.6rem;
+}
+
+.navbar {
+  list-style: none;
+}
+
+.navbar > a,
+.workshop > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navitem {
+  display: inline-block;
+  padding: 1em;
+  font-size: 0.9rem;
+  border-bottom: 5px solid transparent;
+  transition: border-color linear 0.2s;
+}
+
+.navitem:hover {
+  border-color: #723389;
+}
+
+.features {
+  display: flex;
+  background: url("/img/newbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.feature {
+  margin: 1.3em;
+  padding: 1em;
+  text-align: center;
+  background: rgba(114, 51, 137, 0.5);
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity linear 0.5s;
+}
+
+.feature > h1 {
+  padding-bottom: 1em;
+}
+
+.workshops {
+  padding: 1em;
+  background: #328aab;
+  color: #ffffff;
+}
+
+.grid {
+  display: flex;
+}
+
+.workshop {
+  margin: 1em;
+  padding: 1em;
+  background: #723389;
+}
+
+.workshop > p {
+  margin: 1em 0;
+  font-size: 1rem;
+}
+
+.workshop > a {
+  transition: color linear 0.2s;
+}
+
+.workshop > a:hover {
+  color: #328aab;
+}
+
+.featured-section {
+  display: flex;
+  padding: 1em;
+  justify-content: space-evenly;
+  background: #723389;
+  color: #ffffff;
+  /* background: white;
+  color: #723389; */
+}
+
+.featured-section-text {
+  max-width: 60%;
+}
+
+.featured-section-button {
+  text-decoration: none;
+  align-self: center;
+  padding: 1.5em;
+  background: #328aab;
+  color: #ffffff;
+}
+
+.featured-section-button:hover {
+  background: hsl(196, 55%, 40%);
+  color: #723389;
+  transition: background-color linear 0.2s;
+  transition: color linear 0.2s;
+}
+
+footer {
+  padding: 1em;
+  /* background: black; */
+  background: #328aab;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+}
+
+.links>a {
+  color: #ffffff;
+  margin: 1em .5em;
+  text-decoration: none;
+}
+
+.tribute {
+  text-align: center;
+  font-size: .8rem;
+  font-style: italic;
+}
+
+.fab {
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.social, footer > h1 {
+  font-size: 1rem;
+}

@@ -13,9 +13,6 @@
 
 header {
   display: flex;
-  position: absolute;
-  top: 0px;
-  left: 0px;
   width: 100vw;
   justify-content: space-between;
   padding: 0 1em;

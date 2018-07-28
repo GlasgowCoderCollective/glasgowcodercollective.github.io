@@ -110,8 +110,6 @@ header {
   justify-content: space-evenly;
   background: #723389;
   color: #ffffff;
-  /* background: white;
-  color: #723389; */
 }
 
 .featured-section-text {
@@ -128,14 +126,11 @@ header {
 
 .featured-section-button:hover {
   background: hsl(196, 55%, 40%);
-  color: #723389;
-  transition: background-color linear 0.2s;
-  transition: color linear 0.2s;
+  transition: background-color linear 0.5s;
 }
 
 footer {
   padding: 1em;
-  /* background: black; */
   background: #328aab;
   color: #ffffff;
   font-size: 1rem;

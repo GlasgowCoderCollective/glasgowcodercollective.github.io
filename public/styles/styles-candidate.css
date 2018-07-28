@@ -9,7 +9,6 @@
 
 .container {
   width: 100vw;
-  overflow: hidden;
 }
 
 header {
@@ -112,8 +111,10 @@ header {
   display: flex;
   padding: 1em;
   justify-content: space-evenly;
-  background: #723389;
-  color: #ffffff;
+  /* background: #723389;
+  color: #ffffff; */
+  background: white;
+  color: #723389;
 }
 
 .slack > p {
@@ -130,7 +131,9 @@ header {
 
 .slack > a:hover {
   background: hsl(196, 55%, 40%);
+  color: #723389;
   transition: background-color linear 0.2s;
+  transition: color linear 0.2s;
 }
 
 footer {
@@ -162,6 +165,6 @@ footer {
   font-size: 1.5rem;
 }
 
-.social {
-  font-size: 2rem;
+.social, footer > h1 {
+  font-size: 1rem;
 }

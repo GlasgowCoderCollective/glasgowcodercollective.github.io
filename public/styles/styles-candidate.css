@@ -59,7 +59,7 @@ header {
 
 .features {
   display: flex;
-  background: url("/img/bg.jpg");
+  background: url("/img/newbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -68,7 +68,7 @@ header {
   margin: 1.3em;
   padding: 1em;
   text-align: center;
-  background: rgba(114, 51, 137, 0.7);
+  background: rgba(114, 51, 137, 0.5);
   color: #ffffff;
   opacity: 0;
   transition: opacity linear 0.5s;

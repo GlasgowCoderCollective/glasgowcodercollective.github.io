@@ -3,7 +3,7 @@
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
-  font-size: 25px;
+  font-size: 22px;
   font-family: "Questrial", sans-serif;
 }
 
@@ -109,24 +109,25 @@ header {
   padding: 1em;
   justify-content: space-evenly;
   background: #723389;
-  color: #ffffff;
+  color: white;
 }
 
 .featured-section-text {
   max-width: 60%;
 }
 
-.featured-section-button {
-  text-decoration: none;
-  align-self: center;
-  padding: 1.5em;
-  background: #328aab;
-  color: #ffffff;
+.workshop-description {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
-.featured-section-button:hover {
-  background: hsl(196, 55%, 40%);
-  transition: background-color linear 0.5s;
+.youtube-referral {
+  font-weight: bold;
+}
+
+.youtube-referral > a {
+  color: white;
 }
 
 footer {

@@ -2,124 +2,93 @@
 <html lang="en">
 
 <head>
-  <title>Glasgow Coder Collective</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Bootstrap CSS *must* be called first, so that custom CSS overrides it -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/style.css" type="text/css" />
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
+        crossorigin="anonymous">
+    <title>GlasgowCoderCollective</title>
 </head>
 
 <body>
-
-  <!-- Top area -->
-
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <h4>glasgowCoderCollective</h4>
-      </div>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Glasgow Coder Collective</h1>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <a href="#videos">
+                        <li class="navitem">Videos</li>
+                    </a>
+                    <a href="#about">
+                        <li class="navitem">About</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="features">
+                <div class="feature">
+                    <h1>Cake</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat
+                        pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum
+                        id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum
+                        error nemo magnam quasi vitae doloribus?</p>
+                </div>
+                <div class="feature">
+                    <h1>Coffee</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat
+                        pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum
+                        id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum
+                        error nemo magnam quasi vitae doloribus?</p>
+                </div>
+                <div class="feature">
+                    <h1>Code</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in perferendis exercitationem repellat
+                        pariatur dolorem ipsum eum officia atque a! Autem, corporis corrupti. Sunt unde quidem esse illum
+                        id quo quae ducimus corporis ea iusto et fuga voluptates atque, harum, dolores repellat, nam cum
+                        error nemo magnam quasi vitae doloribus?</p>
+                </div>
+            </div>
+            <div class="workshops">
+                <h1>Workshops coming up</h1>
+                <!-- Start dynamic content -->
+                <div class="grid"></div>
+                <!-- End dynamic content -->
+            </div>
+            <div class="featured-section">
+                <div class="featured-section-text">
+                    <h1 class="workshop-title">Test Heading</h1>
+                    <p class="workshop-description">Test Description</p>
+                    <p class="youtube-referral">More workshops can be found on out <a href="https://www.youtube.com/channel/UCW1GG-QroKAV5No7xzVssJw" target="_blank">YouTube channel</a></p>
+                </div>
+                <iframe class="workshop-frame" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer>
+            <h1>Google us!</h1>
+            <div class="links">
+                <a href="https://www.facebook.com/groups/136019366986372/">
+                    <i class="fab fa-facebook-square social"></i>
+                </a>
+                <a href="https://github.com/GlasgowCoderCollective/">
+                    <i class="fab fa-github social"></i>
+                </a>
+                <a href="https://join.slack.com/t/gla-web-dev/shared_invite/enQtMzE5OTY0NzEyNDM5LWI3ZTUxM2I5MzA5OTUxOTlhNDIzMmQ2ZDhiZTZjNTI3YjljZDlkOThmMjE0NDc4NDAzNmVmOTU4ZDkxMmI5NzM" class="slack-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-slack social"></i>
+                </a>
+            </div>        
+            <div class="tribute">In memory of handsome Neil, who we sadly lost in December 2017</div>
+        </footer>
     </div>
-  </nav>
-
-  <!-- End of top area -->
-
-  <!-- Main area -->
-
-  <div class="main_container">
-    <div class="row">
-      <div class="container about">
-        <div class="container box">
-        <h3>So what's the collective all about then!?</h3>
-        <br>
-        <p>Amongst the bustling tech scene in Glasgow, lives the glasgowCoderCollective. </p>
-        <p>We're building a social community of adult coders at all levels of experience to do code related things together!
-
-        </p>
-      </div>
-      <br>
-      <br>
-      <div class="container box">
-        <h4>Our history</h4>
-        <p>We originated as a bunch of coders from freeCodeCamp eager to meet and code together, thus glaWebDev was promptly born! Some 6months later, we began a period of rebranding to incorporate all coding interests and formed the <strong>g</strong>lasgow<strong>C</strong>oder<strong>C</strong>ollective.
-        <p>
-      </div>
-      <br>
-      <br>
-      <div class="container box">
-        <h4>When and where?</h4>
-        <p>We meet weekly on Thurdays evenings at GCU library 6.30pm - 9.  That doesn't mean everyone turns up of course or stays for the duration, so drop in when it suits you!</p>
-        <p>Some weeks we fancy a change and do a Collective outing to other tech events.</p>
-
-        <p>In April 2018 we hosted our first talk in collaboration with BBC Scotland, it was epic and marks the start of larger events!</p>
-      </div>
-      <br>
-      <br>
-      <div class="container box">
-        <h4>Um, so I'm still not clear what to do at a meet!</h4>
-        <p>Whatever you want really, instead of sitting at home coding, come along and do it socially! Here's some other ideas, just bring your laptop though!:</p>
-        <ul>
-          <li>Progress through freeCodeCamp / codeAcademy /
-          Treehouse tutorials</li>
-          <li>Do some of your own projects </li>
-          <li>Browse and talk geeky stuff</li>
-          <li>Listen to the comedy act that is Ed and Euan</li>
-
-          <li>Ask if anyone has a clue how to solve that thing you're stuck on!</li>
-          <li>Plug your earphones in for a bit to concentrate!</li>
-        </ul>
-        </div>
-        <br>
-        <br>
-        <h4>So come along, beginners and experts alike, join us and have fun!</h4>
-
-        <div class="googlemap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.7989943508546!2d-4.252992784065058!3d55.866153780583865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888441f6d37e73b%3A0xe44f66a88fe29ff5!2sGlasgow+Caledonian+University!5e0!3m2!1sen!2suk!4v1519520344287" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="row slack-invite">
-    <div class="container-fluid jumbotron join">
-      <h3>
-        <strong>Join our Slack</strong>
-      </h3>
-      <!--
-        The href for the slack button must be generated from the workspace admin panel.
-
-        To get the link, go to the workspace admin button > Invite People > Get An Invite
-        Link To Share > Never Expires > Create Invite Link
-
-        This will generate the link that can be used in the slack button href below
-      -->
-      <a href="https://join.slack.com/t/gla-web-dev/shared_invite/enQtMzE5OTY0NzEyNDM5LWI3ZTUxM2I5MzA5OTUxOTlhNDIzMmQ2ZDhiZTZjNTI3YjljZDlkOThmMjE0NDc4NDAzNmVmOTU4ZDkxMmI5NzM" class="slack-btn slack-btn-outline slack-btn-transition" target="_blank" rel="noopener noreferrer">youremail@whatevermail.com</a>
-    </div>
-  </div>
-
-
-  <!-- End of main area -->
-
-  <!-- Bottom area -->
-
-  <footer>
-    <a href="https://www.facebook.com/groups/136019366986372/">
-      <img alt="Facebook" src="http://dev.redink.dk/otterup/wp-content/uploads/2017/09/facebook-f-logo.png" height="30em" />
-    </a>
-    <a href="https://github.com/GlasgowCoderCollective/">
-      <!-- TODO: Github icon contains errors and cannot be displayed. Need to find a new one  -->
-      <img alt="Github" src="https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png" height="30em" />
-    </a>
-    <p>In memory of handsome Neil, who we sadly lost in December 2017</p>
-
-  </footer>
-
-  <!-- End of bottom area -->
-
+    <script src="js/featuresloader.js"></script>
+    <script src="js/workshopsloader.js"></script>
+    <script src="js/workshop_youtube.js"></script>
 </body>
 
 </html>

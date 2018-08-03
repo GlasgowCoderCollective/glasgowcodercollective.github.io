@@ -11,6 +11,7 @@
   "author": "The Glasgow Coder Collective",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "node-fetch": "^2.2.0"
   }
 }

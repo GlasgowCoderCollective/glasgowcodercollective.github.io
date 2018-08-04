@@ -14,6 +14,18 @@ const getLatestWorkshop = () => {
   });
 };
 
+const getYoutubeVideos = () => {
+  return new Promise((resolve, reject) => {
+    return fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCW1GG-QroKAV5No7xzVssJw&maxResults=25&order=date&fields=items(id%2FvideoId%2Csnippet(description%2Ctitle))&key=${youtube_key}`)
+      .then(response => response.json())
+      .then(json => {
+        // TODO: Error checking here
+        resolve(json);
+      })
+  });
+}
+
 module.exports = {
-  getLatestWorkshop
+  getLatestWorkshop,
+  getYoutubeVideos
 };

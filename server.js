@@ -3,10 +3,12 @@ const path = require("path");
 
 const { removeHeaders } = require("./middleware/headers");
 const indexRoute = require("./routes/indexRoute");
+const videosRoute = require("./routes/videosRoute");
 const apiRoute = require("./routes/apiRoute");
 
 server.use(require("express").static(path.resolve(__dirname, "public")));
 server.use("/", removeHeaders, indexRoute);
+server.use("/videos", removeHeaders, videosRoute);
 server.use("/api", apiRoute);
 
 const PORT = process.env.PORT || 3000;

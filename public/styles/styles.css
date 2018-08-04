@@ -147,6 +147,39 @@ footer {
   text-decoration: none;
 }
 
+.video-grid {
+  min-height: 80vh;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.videos-info {
+  margin: 1rem;
+  text-align: center;
+}
+
+.fa-spinner {
+  animation: spinnerAnim 1s linear infinite;
+  font-size: 3rem;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.loader {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  display: none !important;
+}
+
 .tribute {
   text-align: center;
   font-size: .8rem;
@@ -160,4 +193,8 @@ footer {
 
 .social, footer > h1 {
   font-size: 1rem;
+}
+
+@keyframes spinnerAnim {
+  to { transform: rotateZ(360deg); }
 }

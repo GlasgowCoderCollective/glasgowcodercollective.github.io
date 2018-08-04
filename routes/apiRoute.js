@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { getWorkshops } = require("../mockdata/workshops");
-const { getLatestWorkshop } = require('../data/youtube/getLatestWorkshop');
+const { getLatestWorkshop, getYoutubeVideos } = require('../data/youtube/media');
 
 router.get("/workshops", (req, res) => res.json(getWorkshops()));
 router.get("/youtube/workshop", (req, res) => {
@@ -14,6 +14,15 @@ router.get("/youtube/workshop", (req, res) => {
             }
 
             res.json(workshop);
+        });
+});
+
+router.get('/youtube/videos', (req, res) => {
+    getYoutubeVideos()
+        .then(json => {
+            if(json.items.length > 0) {
+                res.json(json.items);
+            }
         });
 });
 

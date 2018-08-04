@@ -1,4 +1,4 @@
-var live = false;
+var live = true;
 
 if (live) {
   fetch("/api/youtube/workshop")

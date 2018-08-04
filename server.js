@@ -11,5 +11,9 @@ server.use("/", removeHeaders, indexRoute);
 server.use("/videos", removeHeaders, videosRoute);
 server.use("/api", apiRoute);
 
+server.get("/magic", (req, res) =>
+  res.sendFile(path.resolve(__dirname, "views", "magic.html"))
+);
+
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => console.log("Server started on port", PORT));

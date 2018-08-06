@@ -37,7 +37,7 @@ Stretch Goals include:
 
 ### Ancient History
 
-Our previous group site was [www.glawebdev.com](www.glawebdev.com)
+Our previous group site was [www.glawebdev.com](http://www.glawebdev.com)
 previously set up by [NeilD](https://github.com/neildocherty)
 
 

@@ -23,6 +23,7 @@ header {
 .title {
   margin: auto 0;
   font-size: 1rem;
+  justify-self: flex-start;
 }
 
 .title > h1::after {
@@ -30,6 +31,7 @@ header {
   display: block;
   margin-top: 0.2em;
   font-size: 0.6rem;
+  padding-left: 50px;
 }
 
 .navbar {
@@ -55,7 +57,9 @@ header {
 }
 
 .features {
-  display: flex;
+  /* display: flex; */
+  overflow-y: hidden;
+  height: 80vh;
   background: url("/img/newbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -106,7 +110,7 @@ header {
 
 .featured-section {
   display: flex;
-  padding: 1em;
+  padding: 4em;
   justify-content: space-evenly;
   background: #723389;
   color: white;
@@ -197,4 +201,8 @@ footer {
 
 @keyframes spinnerAnim {
   to { transform: rotateZ(360deg); }
+}
+
+#about {
+  padding: 4em;
 }

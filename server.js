@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 const server = require("express")();
 const path = require("path");
-=======
-const server = require('express')();
-const path = require('path');
->>>>>>> development
 
 const { removeHeaders } = require('./middleware/headers');
 const indexRoute = require('./routes/indexRoute');
@@ -15,14 +10,6 @@ if(process.env.NODE_ENV === 'production') {
   const enforce = require('express-sslify');
   server.use(enforce.HTTPS({ trustProtoHeader: true }));
 }
-<<<<<<< HEAD
-
-server.use(require("express").static(path.resolve(__dirname, "public")));
-server.use("/", removeHeaders, indexRoute);
-server.use("/videos", removeHeaders, videosRoute);
-server.use("/api", apiRoute);
-=======
->>>>>>> development
 
 server.use(require('express').static(path.resolve(__dirname, 'public')));
 server.use('/', removeHeaders, indexRoute);

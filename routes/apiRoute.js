@@ -1,7 +1,8 @@
-const router = require("express").Router();
-const { getWorkshops } = require("../mockdata/workshops");
+const router = require('express').Router();
+const { getWorkshops } = require('../mockdata/workshops');
 const { getLatestWorkshop, getYoutubeVideos } = require('../data/youtube/media');
 
+<<<<<<< HEAD
 router.get("/workshops", (req, res) => res.json(getWorkshops()));
 router.get("/youtube/workshop", async (req, res) => {
     let workshop = {
@@ -21,15 +22,36 @@ router.get("/youtube/workshop", async (req, res) => {
     }
 
     res.json(workshop);
+=======
+router.get('/workshops', (req, res) => res.json(getWorkshops()));
+router.get('/youtube/workshop', async (req, res) => {
+  let workshop = {
+    title: 'Default Title',
+    description: 'Default Description',
+    id: 'Default ID',
+    thumbnail: 'Default Thumbnail'
+  };
+
+  if(process.env.NODE_ENV === 'production') {
+    const json = await getLatestWorkshop();
+
+    workshop.title = json.items[0].snippet.title,
+    workshop.description = json.items[0].snippet.description,
+    workshop.id = json.items[0].snippet.resourceId.videoId,
+    workshop.thumbnail = json.items[0].snippet.thumbnails.standard.url;
+  }
+
+  res.json(workshop);
+>>>>>>> development
 });
 
 router.get('/youtube/videos', (req, res) => {
-    getYoutubeVideos()
-        .then(json => {
-            if(json.items.length > 0) {
-                res.json(json.items);
-            }
-        });
+  getYoutubeVideos()
+    .then(json => {
+      if(json.items.length > 0) {
+        res.json(json.items);
+      }
+    });
 });
 
 module.exports = router;

@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-family: "Questrial", sans-serif;
+}
+
+.container {
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 0 1em;
+  background: #328aab;
+  color: #ffffff;
+}
+
+.title {
+  margin: auto 0;
+  font-size: 1rem;
+  justify-self: flex-start;
+}
+
+.title > h1::after {
+  content: "Connecting coders since '17";
+  display: block;
+  margin-top: 0.2em;
+  font-size: 0.6rem;
+  padding-left: 50px;
+}
+
+.navbar {
+  list-style: none;
+}
+
+.navbar > a,
+.workshop > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navitem {
+  display: inline-block;
+  padding: 1em;
+  font-size: 0.9rem;
+  border-bottom: 5px solid transparent;
+  transition: border-color linear 0.2s;
+}
+
+.navitem:hover {
+  border-color: #723389;
+}
+
+.features {
+  /* display: flex; */
+  overflow-y: hidden;
+  height: 80vh;
+  background: url("/img/newbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.feature {
+  margin: 1.3em;
+  padding: 1em;
+  text-align: center;
+  background: rgba(114, 51, 137, 0.5);
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity linear 0.5s;
+}
+
+.feature > h1 {
+  padding-bottom: 1em;
+}
+
+.workshops {
+  padding: 1em;
+  background: #328aab;
+  color: #ffffff;
+}
+
+.grid {
+  display: flex;
+}
+
+.workshop {
+  margin: 1em;
+  padding: 1em;
+  background: #723389;
+}
+
+.workshop > p {
+  margin: 1em 0;
+  font-size: 1rem;
+}
+
+.workshop > a {
+  transition: color linear 0.2s;
+}
+
+.workshop > a:hover {
+  color: #328aab;
+}
+
+.featured-section {
+  display: flex;
+  padding: 4em;
+  justify-content: space-evenly;
+  background: #723389;
+  color: white;
+}
+
+.featured-section-text {
+  max-width: 60%;
+}
+
+.workshop-description {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.youtube-referral {
+  font-weight: bold;
+}
+
+.youtube-referral > a {
+  color: white;
+}
+
+footer {
+  padding: 1em;
+  background: #328aab;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+}
+
+.links>a {
+  color: #ffffff;
+  margin: 1em .5em;
+  text-decoration: none;
+}
+
+.video-grid {
+  min-height: 80vh;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.videos-info {
+  margin: 1rem;
+  text-align: center;
+}
+
+.fa-spinner {
+  animation: spinnerAnim 1s linear infinite;
+  font-size: 3rem;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.loader {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  display: none !important;
+}
+
+.tribute {
+  text-align: center;
+  font-size: .8rem;
+  font-style: italic;
+}
+
+.fab {
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.social, footer > h1 {
+  font-size: 1rem;
+}
+
+@keyframes spinnerAnim {
+  to { transform: rotateZ(360deg); }
+}
+
+#about {
+  padding: 4em;
+}

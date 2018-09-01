@@ -2,7 +2,7 @@
 
 [The current site](https://glasgowcodercollective.github.io/)
 
-## Abous Us
+## About Us
 
 We are the Coder Collective! A collection of like-minded technology enthusiasts that is open to people of all (and no) experience levels. We believe programming is most productive and fun when done collectively. Come to a meeting for some social coding!
 
@@ -21,7 +21,7 @@ Contributor | Contribution
 --- | ---
 [Tracy](https://github.com/verde79) | the main page
 [Ed](https://github.com/L3gomancer) | the profile pages section
-Craig | the slack invite
+[Craig](https://github.com/Fixy250185/) | reworking the site to nodejs
 Alastair | keeping us doing things correctly/tidying up the old repo 
 
 
@@ -37,7 +37,7 @@ Stretch Goals include:
 
 ### Ancient History
 
-Our previous group site was [www.glawebdev.com](www.glawebdev.com)
+Our previous group site was [www.glawebdev.com](http://www.glawebdev.com)
 previously set up by [NeilD](https://github.com/neildocherty)
 
 

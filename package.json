@@ -9,6 +9,9 @@
     "lint": "./node_modules/eslint/bin/eslint.js . --fix",
     "test": "npm run lint"
   },
+  "engines": {
+    "node": "8.11.4"
+  },
   "keywords": [],
   "author": "The Glasgow Coder Collective",
   "license": "MIT",

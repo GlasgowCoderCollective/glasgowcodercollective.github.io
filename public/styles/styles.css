@@ -1,12 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   box-sizing: border-box;
   font-size: 22px;
   font-family: "Questrial", sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
+}
 .container {
   width: 100vw;
 }
@@ -59,7 +63,7 @@ header {
 .features {
   /* display: flex; */
   overflow-y: hidden;
-  height: 80vh;
+  min-height: 80vh;
   background: url("/img/newbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;

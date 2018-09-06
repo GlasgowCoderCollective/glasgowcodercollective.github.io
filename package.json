@@ -5,13 +5,22 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "serve": "nodemon server.js"
+    "serve": "nodemon server.js",
+    "lint": "./node_modules/eslint/bin/eslint.js . --fix",
+    "test": "npm run lint"
+  },
+  "engines": {
+    "node": "8.11.4"
   },
   "keywords": [],
   "author": "The Glasgow Coder Collective",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.3",
+    "express-sslify": "^1.2.0",
     "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0"
   }
 }

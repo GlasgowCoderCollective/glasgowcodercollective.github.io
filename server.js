@@ -1,5 +1,5 @@
-const server = require("express")();
-const path = require("path");
+const server = require('express')();
+const path = require('path');
 
 const { removeHeaders } = require('./middleware/headers');
 const indexRoute = require('./routes/indexRoute');
@@ -21,5 +21,5 @@ server.get('/magic', (req, res) =>
 );
 
 const PORT = process.env.PORT || 3000;
-// eslint-disable-next-line no-console
+
 server.listen(PORT, () => console.log('Server started on port', PORT));

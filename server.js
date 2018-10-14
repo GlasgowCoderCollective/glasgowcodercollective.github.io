@@ -22,4 +22,5 @@ server.get('/magic', (req, res) =>
 
 const PORT = process.env.PORT || 3000;
 
+// eslint-disable-next-line no-console
 server.listen(PORT, () => console.log('Server started on port', PORT));

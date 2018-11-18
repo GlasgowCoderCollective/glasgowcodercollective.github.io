@@ -1,11 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   box-sizing: border-box;
   font-size: 22px;
   font-family: "Questrial", sans-serif;
 }
+
+body{
+  overflow-x: hidden;
+}
+
 
 .container {
   width: 100vw;
@@ -36,6 +40,7 @@ header {
 
 .navbar {
   list-style: none;
+  padding: 20px 0 0 0;
 }
 
 .navbar > a,
@@ -59,7 +64,7 @@ header {
 .features {
   /* display: flex; */
   overflow-y: hidden;
-  height: 80vh;
+  min-height: 80vh;
   background: url("/img/newbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,7 +85,8 @@ header {
 }
 
 .workshops {
-  padding: 1em;
+  padding: 3em;
+  margin:40px;
   background: #328aab;
   color: #ffffff;
 }
@@ -110,6 +116,7 @@ header {
 
 .featured-section {
   display: flex;
+  margin:40px;
   padding: 4em;
   justify-content: space-evenly;
   background: #723389;

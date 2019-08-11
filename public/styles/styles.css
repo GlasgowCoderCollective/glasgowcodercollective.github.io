@@ -61,8 +61,7 @@ header {
   border-color: #723389;
 }
 
-.features {
-  /* display: flex; */
+.hero {
   overflow-y: hidden;
   min-height: 80vh;
   background: url("/img/newbg.jpg");
@@ -70,15 +69,37 @@ header {
   background-repeat: no-repeat;
 }
 
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));  
+  
+  grid-gap: 2em;
+  padding:4em;
+  width:100%;
+  
+}
+
 .feature {
-  margin: 1.3em;
+  
+  display:grid;
   padding: 1em;
   text-align: center;
   background: rgba(114, 51, 137, 0.5);
   color: #ffffff;
   opacity: 0;
   transition: opacity linear 0.5s;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
 }
+
+.feature >h1{
+  font-size: 1.4rem;
+  
+}
+.feature > h1, p{
+  height:100%;
+  }
 
 .feature > h1 {
   padding-bottom: 1em;
@@ -212,4 +233,10 @@ footer {
 
 #about {
   padding: 4em;
+}
+
+@media only screen and (min-width: 550px) {
+  .feature>p {
+    font-size: 1.1rem;
+  }
 }

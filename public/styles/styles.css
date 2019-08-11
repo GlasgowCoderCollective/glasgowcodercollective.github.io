@@ -63,7 +63,7 @@ header {
 
 .hero {
   overflow-y: hidden;
-  min-height: 80vh;
+  min-height: 90vh;
   background: url("/img/newbg.jpg") no-repeat center;
   background-size: cover;
 }
@@ -105,9 +105,10 @@ header {
 
 .workshops {
   padding: 3em;
-  margin:40px;
+  margin:4rem;
   background: #328aab;
   color: #ffffff;
+  opacity: 0.65;
 }
 
 .grid {
@@ -121,7 +122,7 @@ header {
 }
 
 .workshop > p {
-  margin: 1em 0;
+  margin: 1em 1em;
   font-size: 1rem;
 }
 
@@ -230,7 +231,7 @@ footer {
 }
 
 #about {
-  padding: 4em;
+  padding: 0 4em;
 }
 
 @media only screen and (min-width: 550px) {

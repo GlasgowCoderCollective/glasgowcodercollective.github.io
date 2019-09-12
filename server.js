@@ -1,5 +1,5 @@
 const { app } = require('./app');
+const { logger } = require('./log/winston');
 
 const PORT = process.env.PORT || 3000;
-// eslint-disable-next-line no-console
-app.listen(PORT, () => console.log('Server started on port', PORT));
+app.listen(PORT, logger.info(`Server started on port ${PORT}`));

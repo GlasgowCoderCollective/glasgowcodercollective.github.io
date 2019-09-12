@@ -28,5 +28,5 @@ const workshops = [
 const getWorkshops = () => workshops;
 
 module.exports = {
-  getWorkshops
+  getWorkshops,
 };

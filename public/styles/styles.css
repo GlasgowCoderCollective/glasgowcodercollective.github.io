@@ -170,6 +170,7 @@ footer {
 
 .links {
   display: flex;
+  justify-content: center;
 }
 
 .links>a {
@@ -222,10 +223,14 @@ footer {
   font-size: 1.5rem;
 }
 
-.social, footer > h1 {
+footer > h1 {
   font-size: 1rem;
+  text-align: center;
 }
 
+.social{
+  font-size:1.7rem;
+}
 @keyframes spinnerAnim {
   to { transform: rotateZ(360deg); }
 }

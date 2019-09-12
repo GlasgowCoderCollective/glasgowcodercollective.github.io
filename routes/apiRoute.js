@@ -8,16 +8,18 @@ router.get('/youtube/workshop', async (req, res) => {
     title: 'Default Title',
     description: 'Default Description',
     id: 'Default ID',
-    thumbnail: 'Default Thumbnail'
+    thumbnail: 'Default Thumbnail',
   };
 
-  if(process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'production') {
     const json = await getLatestWorkshop();
 
-    workshop.title = json.items[0].snippet.title,
-    workshop.description = json.items[0].snippet.description,
-    workshop.id = json.items[0].snippet.resourceId.videoId,
-    workshop.thumbnail = json.items[0].snippet.thumbnails.standard.url;
+    workshop = {
+      title: json.items[0].snippet.title,
+      description: json.items[0].snippet.description,
+      id: json.items[0].snippet.resourceId.videoId,
+      thumbnail: json.items[0].snippet.thumbnails.standard.url,
+    };
   }
 
   res.json(workshop);
@@ -25,8 +27,8 @@ router.get('/youtube/workshop', async (req, res) => {
 
 router.get('/youtube/videos', (req, res) => {
   getYoutubeVideos()
-    .then(json => {
-      if(json.items.length > 0) {
+    .then((json) => {
+      if (json.items.length > 0) {
         res.json(json.items);
       }
     });

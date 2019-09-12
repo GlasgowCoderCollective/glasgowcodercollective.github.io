@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "serve": "nodemon server.js",
-    "lint": "./node_modules/eslint/bin/eslint.js . --fix",
+    "lint": "eslint --fix .",
     "test": "npm run lint"
   },
   "engines": {

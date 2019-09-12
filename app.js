@@ -1,5 +1,6 @@
 const app = require('express')();
 const path = require('path');
+const enforce = require('express-sslify');
 const helmet = require('helmet');
 
 const { removeHeaders } = require('./middleware/headers');
@@ -8,8 +9,7 @@ const videosRoute = require('./routes/videosRoute');
 const apiRoute = require('./routes/apiRoute');
 
 // Force https if in production
-if(process.env.NODE_ENV === 'production') {
-  const enforce = require('express-sslify');
+if (process.env.NODE_ENV === 'production') {
   app.use(enforce.HTTPS({ trustProtoHeader: true }));
 }
 

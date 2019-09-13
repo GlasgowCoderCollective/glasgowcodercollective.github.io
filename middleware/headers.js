@@ -4,5 +4,5 @@ const removeHeaders = (req, res, next) => {
 };
 
 module.exports = {
-  removeHeaders
+  removeHeaders,
 };

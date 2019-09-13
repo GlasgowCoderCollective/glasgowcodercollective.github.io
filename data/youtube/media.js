@@ -1,31 +1,23 @@
 const fetch = require('node-fetch');
-const { youtube_key } = require('../../config');
+const config = require('../../config');
 
-const getLatestWorkshop = () => {
-  return new Promise(resolve => {
-    fetch(
-      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=1&playlistId=PLwewcoGnsFsfF186l11QcDLquwkACOfjW&fields=items(snippet(description%2CresourceId%2FvideoId%2Cthumbnails%2Fstandard%2Furl%2Ctitle))&key=${youtube_key}`
-    )
-      .then(response => response.json())
-      .then(json => {
-        // TODO: Error checking here
-        resolve(json);
-      });
-  });
-};
+/**
+ * Get the latest workshop from the YouTube playlist
+ */
+const getLatestWorkshop = () => new Promise((resolve) => {
+  fetch(config.latestWorkshopUrl)
+    .then((response) => response.json())
+    .then((json) => resolve(json));
+});
 
-const getYoutubeVideos = () => {
-  return new Promise(resolve => {
-    return fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCW1GG-QroKAV5No7xzVssJw&maxResults=25&order=date&fields=items(id%2FvideoId%2Csnippet(description%2Ctitle))&key=${youtube_key}`)
-      .then(response => response.json())
-      .then(json => {
-        // TODO: Error checking here
-        resolve(json);
-      });
-  });
-};
+/**
+ * Get the all the videos from YouTube channel
+ */
+const getYoutubeVideos = () => new Promise((resolve) => fetch(config.videosUrl)
+  .then((response) => response.json())
+  .then((json) => resolve(json)));
 
 module.exports = {
   getLatestWorkshop,
-  getYoutubeVideos
+  getYoutubeVideos,
 };

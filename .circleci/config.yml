@@ -1,8 +1,8 @@
 version: 2
- jobs:
-   build:
-     docker:
-       - image: circleci/node:lts
-     steps:
-       - checkout
-       - run: npm i && npm test
+jobs:
+    build:
+        docker:
+            - image: circleci/node:lts
+        steps:
+            - checkout
+            - run: npm i && npm test

@@ -1,2 +1,8 @@
-node_modules/
+# Dependencies
+node_modules
+
+# System
 .DS_Store
+
+# Environment
+.env

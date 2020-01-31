@@ -27,7 +27,7 @@ const TalkSchema = new Schema({
     required: true,
   },
   technologies: {
-    type: String,
+    type: [String],
     required: true,
   },
   applicant: {

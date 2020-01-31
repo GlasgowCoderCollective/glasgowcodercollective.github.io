@@ -52,4 +52,13 @@ router.post('/propose', (req, res) => {
     }));
 });
 
+router.get('/remove', (req, res) => {
+  Talk.findByIdAndRemove(req.query.id)
+    .then(() => res.json({ error: false, message: 'Talk submitted' }))
+    .catch((databaseError) => res.status(400).json({
+      error: true,
+      message: databaseError.message,
+    }));
+});
+
 module.exports = router;

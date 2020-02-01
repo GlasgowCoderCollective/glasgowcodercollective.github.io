@@ -2,14 +2,18 @@ const app = require('express')();
 const cors = require('cors');
 const helmet = require('helmet');
 const bodyParser = require('body-parser');
+const path = require('path');
 
+const clientPath = path.resolve(__dirname, 'client');
+const publicPath = path.resolve(__dirname, 'public');
 const apiRouter = require('./routes/api');
 
 app.use(cors());
 app.use(helmet());
 app.use(bodyParser.json());
+app.use(require('express').static(publicPath));
 
-app.get('/heartbeat', (req, res) => res.json({ error: false, message: 'This app is online' }));
+app.get('/', (req, res) => res.sendFile(`${clientPath}/index.html`));
 
 app.use('/api', apiRouter);
 

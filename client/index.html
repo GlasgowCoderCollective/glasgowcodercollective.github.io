@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css"
+        integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css"
+        integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
     <title>glasgowCoderCollective</title>
 </head>
 
@@ -25,7 +25,7 @@
                 <ul class="navbar">
                     <a href="/">
                         <li class="navitem">Home</li>
-                    <!--
+                        <!--
                     <a href="/videos">
                         <li class="navitem">Videos</li>
                     </a>
@@ -33,8 +33,15 @@
                     <a href="#about">
                         <li class="navitem">About</li>
                     </a>
+                    <a id="loginButton" href="/login">
+                        <li class="navitem">Login</li>
+                    </a>
+                    <a id="logoutButton" href="/api/auth/logout">
+                        <li class="navitem">Logout</li>
+                    </a>
                 </ul>
             </nav>
+            <img id="avatar" src="/img/user.png" style="width: 50px; height: 50px; border-radius: 50%; border: 5px solid white; margin-top: 1em;" alt="Avatar">
         </header>
         <main>
             <div class="hero"></div>
@@ -42,37 +49,47 @@
             <div class="features">
                 <div class="feature">
                     <h1>Connect</h1>
-                    <p>Hang out with coders of all backgrounds and levels. Collaborate and solve problems more creatively with diverse skillsets!</p>
+                    <p>Hang out with coders of all backgrounds and levels. Collaborate and solve problems more
+                        creatively with diverse skillsets!</p>
                 </div>
                 <div class="feature">
                     <h1>Code</h1>
-                    <p>Social coding == fun! Have problems with projects, tutorials or understanding concepts?! Ask for some help … or share your expertise!</p>
+                    <p>Social coding == fun! Have problems with projects, tutorials or understanding concepts?! Ask for
+                        some help … or share your expertise!</p>
                 </div>
                 <div class="feature">
                     <h1>Chat</h1>
-                    <p>Share and discuss experiences and ideas or random gifs, articles, miscellaneous geeky chat and jokes.  It’s up to you!</p>
+                    <p>Share and discuss experiences and ideas or random gifs, articles, miscellaneous geeky chat and
+                        jokes. It’s up to you!</p>
                 </div>
             </div>
-            
+
             <div id="about">
                 <h1>About us</h1>
                 <br>
                 <p>
-                    We are the glasgowCoderCollective. We meet weekly to code socially and chat about all things code related. We’re a collection
-                    of like-minded technology enthusiasts that’s open to people of all (and no) experience levels. We believe
+                    We are the glasgowCoderCollective. We meet weekly to code socially and chat about all things code
+                    related. We’re a collection
+                    of like-minded technology enthusiasts that’s open to people of all (and no) experience levels. We
+                    believe
                     programming is most productive and fun when done collectively.
                 </p>
                 <br>
                 <p>
-                    While we have our origins in web development via FreeCodeCamp we encourage anyone to come along. Think of us like a big group
-                    of friends, chatting about code, tech articles, showing the latest in problematic programmes, troublesome
+                    While we have our origins in web development via FreeCodeCamp we encourage anyone to come along.
+                    Think of us like a big group
+                    of friends, chatting about code, tech articles, showing the latest in problematic programmes,
+                    troublesome
                     tutorials and sometimes people actually just code!!</p>
                 <br>
-                <p>We meet on Thursday evenings 6.30pm onwards in the library of Glasgow Caledonian University, and you can
+                <p>We meet on Thursday evenings 6.30pm onwards in the library of Glasgow Caledonian University, and you
+                    can
                     turn up for as much of the evening as you want. Bring your laptop if you want to code or drop by for
                     coding chat.
                 </p>
-                <p>Bring something to eat if you want.  Although we'd like to get sponsorship and join the ranks of other tech meets with pizza, for now we bring our own.  There are vending machines for sweets, cold/hot drinks, otherwise there's a Gregg's in Buchanan Bus Station and a Sainsbury's adjacent to it.
+                <p>Bring something to eat if you want. Although we'd like to get sponsorship and join the ranks of other
+                    tech meets with pizza, for now we bring our own. There are vending machines for sweets, cold/hot
+                    drinks, otherwise there's a Gregg's in Buchanan Bus Station and a Sainsbury's adjacent to it.
             </div>
             <!-- <div class="workshops">
                 <h1>Workshops coming up</h1>
@@ -82,7 +99,9 @@
                 <h1>Upcoming workshops</h1>
                 <br>
                 <p>
-                    Ed shared his love of Phaser, completing his first tech talk on the subject, at CodeCraft's first time speakers event this year.  He'll be doing a workshop with us, building something simple.  This will be hands on!!
+                    Ed shared his love of Phaser, completing his first tech talk on the subject, at CodeCraft's first
+                    time speakers event this year. He'll be doing a workshop with us, building something simple. This
+                    will be hands on!!
                 </p>
                 <br>
                 <p>No set date yet, so watch this space!!</p>
@@ -119,8 +138,25 @@
         </footer>
     </div>
     <script src="js/featuresloader.js"></script>
-    <script src="js/workshopsloader.js"></script>
-    <script src="js/workshop_youtube.js"></script>
+    <!-- <script src="js/workshopsloader.js"></script>
+    <script src="js/workshop_youtube.js"></script> -->
+    <script>
+        const loginButton = document.querySelector('#loginButton');
+        const logoutButton = document.querySelector('#logoutButton');
+        const avatar = document.querySelector('#avatar');
+
+        fetch('/api/auth/user')
+            .then(response => response.json())
+            .then(user => {
+                loginButton.hidden = true;
+                logoutButton.hidden = false;
+                avatar.src = user.data.avatar;
+            })
+            .catch(() => {
+                loginButton.hidden = false;
+                logoutButton.hidden = true;
+            });
+    </script>
 </body>
 
 </html>

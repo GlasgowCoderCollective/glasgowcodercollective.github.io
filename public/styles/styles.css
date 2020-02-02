@@ -228,6 +228,13 @@ footer > h1 {
   text-align: center;
 }
 
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0em;
+}
+
 .social{
   font-size:1.7rem;
 }

@@ -177,12 +177,3 @@ definitions:
         type: "array"
         items:
           $ref: "#/definitions/Technologies"
-      applicant:
-        type: "object"
-        properties:
-          firstName:
-            type: "string"
-          lastName:
-            type: "string"
-          email:
-            type: "string"

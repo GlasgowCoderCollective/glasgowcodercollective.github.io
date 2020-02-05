@@ -1,0 +1,63 @@
+swagger: "2.0"
+
+info:
+  description: "Glasgow Coder Collective Web Application"
+  version: "1.0.0"
+  title: "GCC Webapp"
+  contact:
+    email: "csweaton@gmail.com"
+
+tags:
+  - name: "Auth"
+    description: "Information about the users"
+  - name: "Talks"
+    description: Propose and view talks at the meetups
+
+schemes:
+  - "https"
+
+paths:
+  /api/auth/user:
+    get:
+      tags:
+        - Auth
+      summary: "Get the profile info for the logged in user"
+      responses:
+        200:
+          description: "Successful response"
+          schema:
+            $ref: "#/definitions/UserData"
+  /api/talks:
+    get:
+      tags:
+        - Talks
+      summary: "Get all the talks that have been submitted"
+      responses:
+        200:
+          description: "Success"
+
+definitions:
+  UserData:
+    type: "object"
+    properties:
+      _id:
+        type: "string"
+      roles:
+        type: "array"
+        items:
+          $ref: "#/definitions/UserRole"
+      firstName:
+        type: "string"
+      lastName:
+        type: "string"
+      googleId:
+        type: "string"
+      email:
+        type: "string"
+      avatar:
+        type: "string"
+      createdAt:
+        type: "string"
+        format: "date-time"
+  UserRole:
+    type: "string"

@@ -7,7 +7,7 @@ const authCheck = (req, res, next) => {
 
   return User.findById(req.user._id)
     .then((user) => {
-      if (!user) {
+      if (!user || !user.roles.includes('gcc:user')) {
         return res.redirect('/');
       }
 

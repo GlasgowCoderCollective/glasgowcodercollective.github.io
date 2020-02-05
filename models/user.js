@@ -22,6 +22,10 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
+  roles: {
+    type: Array,
+    default: ['gcc:user'],
+  },
   createdAt: {
     type: Date,
     default: Date.now,

@@ -51,6 +51,56 @@ paths:
       responses:
         200:
           description: "Success"
+          schema:
+            $ref: "#/definitions/Talks"
+      parameters:
+        - name: "id"
+          in: "query"
+          description: "ObjectID of the talk"
+          type: "string"
+        - name: "technologies"
+          in: "query"
+          description: "Comma seperated list of technologies used"
+          type: "string"
+        - name: "firstName"
+          in: "query"
+          description: "The first name of the person who proposed the talk"
+          type: "string"
+        - name: "lastName"
+          in: "query"
+          description: "The last name of the person who proposed the talk"
+          type: "string"
+        - name: "email"
+          in: "query"
+          description: "The email address of the person who proposed the talk"
+          type: "string"
+  /api/talks/propose:
+    post:
+      tags:
+        - "Talks"
+      summary: "Propose a new talk"
+      responses:
+        200:
+          description: "Success"
+    parameters:
+      - in: "body"
+        name: "body"
+        description: "Talk proposal data"
+        schema:
+            $ref: "#/definitions/Proposal"
+  /api/talks/remove:
+    get:
+      tags:
+        - "Talks"
+      summary: "Remove a talk from the database"
+      responses:
+        200:
+          description: "Success"
+      parameters:
+        - name: "id"
+          in: "query"
+          description: "ObjectID of the talk"
+          type: "string"
 
 definitions:
   UserData:
@@ -77,3 +127,62 @@ definitions:
         format: "date-time"
   UserRole:
     type: "string"
+  Talks:
+    type: "array"
+    items:
+      $ref: "#/definitions/Talk"
+  Talk:
+    type: "object"
+    properties:
+      _id:
+        type: "string"
+      name:
+        type: "string"
+      description:
+        type: "string"
+      technologies:
+        type: "array"
+        items:
+         $ref: "#/definitions/Technologies"
+      applicant:
+        type: "object"
+        $ref: "#/definitions/Applicant"
+      scheduled:
+        type: "boolean"
+      time:
+        type: "string"
+        format: "date-time"
+      createdAt:
+        type: "string"
+        format: "date-time"
+  Technologies:
+    type: "string"
+  Applicant:
+    type: "object"
+    properties:
+      firstName:
+        type: "string"
+      lastName:
+        type: "string"
+      email:
+        type: "string"
+  Proposal:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      description:
+        type: "string"
+      technologies:
+        type: "array"
+        items:
+          $ref: "#/definitions/Technologies"
+      applicant:
+        type: "object"
+        properties:
+          firstName:
+            type: "string"
+          lastName:
+            type: "string"
+          email:
+            type: "string"

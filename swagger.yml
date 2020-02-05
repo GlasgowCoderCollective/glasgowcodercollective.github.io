@@ -17,10 +17,26 @@ schemes:
   - "https"
 
 paths:
+  /api/auth/google:
+    get:
+      tags:
+        - "Auth"
+      summary: "Log in using Google OAuth"
+      responses:
+        200:
+          description: "Successful response"
+  /api/auth/logout:
+    get:
+      tags:
+        - "Auth"
+      summary: "Log out of the application"
+      responses:
+        200:
+          description: "Successful response"
   /api/auth/user:
     get:
       tags:
-        - Auth
+        - "Auth"
       summary: "Get the profile info for the logged in user"
       responses:
         200:

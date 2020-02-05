@@ -40,9 +40,9 @@ router.post('/propose', (req, res) => {
     description: validator.escape(req.body.description || ''),
     technologies: req.body.technologies.split(',').map((t) => validator.escape(t).toLowerCase()),
     applicant: {
-      firstName: validator.escape(req.body.firstName || '').toLowerCase(),
-      lastName: validator.escape(req.body.lastName || '').toLowerCase(),
-      email: validator.escape(req.body.email || '').toLowerCase(),
+      firstName: req.user.firstName,
+      lastName: req.user.lastName,
+      email: req.user.email,
     },
   }).save()
     .then(() => res.json({ error: false, message: 'Talk submitted' }))

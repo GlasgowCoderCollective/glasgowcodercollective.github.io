@@ -22,8 +22,9 @@ passport.use(new GoogleStrategy({
     .then((currentUser) => {
       if (!currentUser) {
         return new User({
-          firstName: profile.name.givenName,
-          lastName: profile.name.familyName,
+          firstName: profile.name.givenName.toLowerCase(),
+          lastName: profile.name.familyName.toLowerCase(),
+          displayName: profile.name.givenName,
           googleId: profile.id,
           email: profile.emails[0].value,
           avatar: profile.photos[0].value,

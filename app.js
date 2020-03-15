@@ -33,10 +33,9 @@ app.use(passport.session());
 
 app.get('/', (req, res) => res.sendFile(`${clientPath}/index.html`));
 app.get('/login', (req, res) => res.sendFile(`${clientPath}/login.html`));
+app.get('/resources', authCheck, (req, res) => res.sendFile(`${clientPath}/resources.html`));
 
 app.use('/api', apiRouter);
-
-app.use('/secure', authCheck, (req, res) => res.json({ error: false, message: 'Logged in' }));
 
 app.all('*', (req, res) => res.status(404).json({ error: true, message: 'No endpoint found' }));
 

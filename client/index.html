@@ -29,6 +29,9 @@
                     <a href="#about">
                         <li class="navitem">About</li>
                     </a>
+                    <a id="resourcesButton" href="/resources">
+                        <li class="navitem">Resources</li>
+                    </a>
                     <a id="loginButton" href="/login">
                         <li class="navitem">Login</li>
                     </a>
@@ -124,6 +127,7 @@
     <script>
         const loginButton = document.querySelector('#loginButton');
         const logoutButton = document.querySelector('#logoutButton');
+        const resourcesButton = document.querySelector('#resourcesButton');
         const avatar = document.querySelector('#avatar');
 
         fetch('/api/auth/user')
@@ -131,11 +135,13 @@
             .then(user => {
                 loginButton.hidden = true;
                 logoutButton.hidden = false;
+                resourcesButton.hidden = false;
                 avatar.src = user.data.avatar;
             })
             .catch(() => {
                 loginButton.hidden = false;
                 logoutButton.hidden = true;
+                resourcesButton.hidden = true;
             });
     </script>
 </body>

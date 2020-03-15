@@ -28,13 +28,26 @@
                     </a>
                 </ul>
             </nav>
-            <img id="avatar" src="/img/user.png" style="width: 50px; height: 50px; border-radius: 50%; border: 5px solid white; margin-top: 1em;" alt="Avatar">
+            <img id="avatar" src="/img/user.png"
+                style="width: 50px; height: 50px; border-radius: 50%; border: 5px solid white; margin-top: 1em;"
+                alt="Avatar">
         </header>
         <main>
+            <div class="uploadsuccess options hidden">
+                File has been uploaded Successfully :)
+            </div>
+            <div class="uploadfail options hidden">
+                File could not be uploaded :(
+            </div>
             <div class="options">
-                <a href="/api/auth/google">
-                    <img src="/img/googlesignin.png" alt="Sign in with google">
-                </a>
+                <form class="form-group" action="/api/resources/upload" method="post" enctype="multipart/form-data">
+                    <input class="form-control" type="file" name="resource">
+                    <input class="form-control" type="submit" value="Upload">
+                </form>
+            </div>
+            <div class="resourcesList">
+                <h1>Resources</h1>
+                <ul class="resources"></ul>
             </div>
         </main>
         <footer>
@@ -54,6 +67,38 @@
             <div class="tribute">In memory of Handsome Neil, who we sadly lost in December 2017</div>
         </footer>
     </div>
+
+    <script>
+        fetch('/api/resources/list')
+            .then(response => response.json())
+            .then((data) => {
+                const { resources } = data;
+                const resourceList = document.querySelector('.resources');
+
+                resourceList.innerHTML = '';
+                resources.forEach((resource) => {
+                    resourceList.innerHTML += `<li><a href="/api/resources/download/${resource.originalFileName}">${resource.originalFileName}</a> - Uploaded by ${resource.uploader}</li>`
+                });
+            });
+
+        fetch('/api/auth/user')
+            .then(response => response.json())
+            .then(user => {
+                avatar.src = user.data.avatar;
+                const successNotification = document.querySelector('.uploadsuccess');
+                const failNotification = document.querySelector('.uploadfail');
+                const urlParams = new URLSearchParams(window.location.search);
+                let result
+                if (urlParams.has('success')) {
+                    result = urlParams.get('success') === 'true';
+                    if (result) {
+                        successNotification.classList.remove('hidden');
+                    } else {
+                        failNotification.classList.remove('hidden');
+                    }
+                }
+            });
+    </script>
 </body>
 
 </html>

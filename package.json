@@ -19,7 +19,7 @@
     "express": "^4.17.1",
     "express-sslify": "^1.2.0",
     "helmet": "^3.21.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "winston": "^3.2.1"
   },
   "devDependencies": {
